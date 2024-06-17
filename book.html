@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flight Booking</title>
+</head>
+<style>
+    #bok{
+        padding: 11px;
+        margin: 11px;
+        border: 5px solid salmon;
+    }
+    .place{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid rebeccapurple;
+        justify-content: center;
+        align-items: center;
+    }
+    .Date{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #A01641;
+        align-items: center;
+    }
+    .pass{
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+        display: flex;
+    }
+    .sumit{
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+        display: flex;
+    }
+</style>
+<body>
+
+<h2>Flight Booking</h2>
+
+<form id="book" action="submit_booking.php" method="post">
+    <div id="bok">
+        <nav class="place">
+            <label for="departure">Departure:</label><br>
+            <input type="text" id="departure" name="departure" required><br>
+      
+            <label for="destination">Destination:</label><br>
+            <input type="text" id="destination" name="destination" required><br>
+        </nav>
+        <nav class="Date">  
+            <label for="depart_date">Departure Date:</label><br>
+            <input type="date" id="depart_date" name="depart_date" required><br>
+            
+            <label for="return_date">Return Date:</label><br>
+            <input type="date" id="return_date" name="return_date" required><br></nav>
+      
+        <div class="pass">
+            <label for="passengers">Passengers:</label><br>
+            <input type="number" id="passengers" name="passengers" min="1" max="10" required><br>
+        </div>
+        <div class="sumit">
+            <input type="submit" value="Submit">
+        </div>
+    </div>
+</form>
+
+</body>
+</html>

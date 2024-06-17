@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fly High</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="tt">
+            <div id="logo">
+                <img src="logo.jpg" alt="LOGO">
+            </div>
+    
+            <ul id="top">
+                <li class="item" herf="#"><a>HOME</a></li>
+                <li class="item" herf="#"><a>About Us</a></li>
+                <li class="item" herf="#"><a>Services</a></li>
+                <li class="item" herf="#"><a>Contact Us</a></li>
+                
+            </ul>
+        </div>
+        <div class="searchbox">
+            <input type="text" placeholder=" search">
+            <ion-icon name="search-outline"></ion-icon>
+        </div>
+       
+    </nav>
+    <section class="scroll">
+        <section id="home" class="section" >
+            <h1 class="h-primary">Welcome to Fly  World</h1>
+                <p>"Welcome aboard! Discover seamless skies with our premier airplane booking service. From breathtaking destinations to impeccable service, we're here to elevate your travel experience. Let your journey begin with ease and excitement. Bon voyage!".</p>
+                <a class="btn"  href="book.html"> Fly Now</a>
+        </section>
+        <section id="services-container" class="section">
+            <h1 class="h-primary1">Our Services</h1>
+            <div id="upservices" >
+                <div>
+                    <button onclick="goback()" class="slidebutton">back</button>
+                </div>
+                <div id="services" >
+                    <div class="slide">
+                        <img src="asia.avif" alt="Asia">
+                        <h2 class="h-secondary">Asia</h2>
+                        <p>Embark on unforgettable journeys across Asia with our airline's exceptional services. From bustling metropolises to serene landscapes, we offer seamless travel experiences tailored to your needs. Explore diverse cultures, taste exotic cuisines, and discover hidden gems with the reliability and comfort you expect. Your Asian adventure starts here.</p>
+                    </div>
+                
+                    <div class="slide">
+                        <img src="EUROPE.png" alt="EUROPE">
+                        <h2 class="h-secondary">EUROPE</h2>
+                        <p>Embark on your European journey with our premium airline services. From bustling cityscapes to serene countryside, we offer seamless travel experiences across Europe. Enjoy top-notch amenities, attentive service, and convenient connections to explore iconic destinations. Let us elevate your European travel experience with comfort, reliability, and style.</p>
+                    </div>
+                
+                    <div class="slide">
+                        <img src="usa.png" alt=" America">
+                        <h2 class="h-secondary">AMERICA</h2>
+                        <p>Discover the wonders of the Americas with our airline's exceptional services. From the vibrant streets of New York City to the serene landscapes of the Grand Canyon, we connect you to the continent's most iconic destinations. Enjoy comfort, convenience, and reliability as you explore the beauty of America with us.</p>
+                    </div>
+
+                    <div class="slide">
+                        <img src="AUSTRALIA.webp" alt="AUSTRALIA">
+                        <h2 class="h-secondary">AUSTRALIA</h2>
+                        <p>Experience the beauty of Australia with our airline's unparalleled services. From the bustling streets of Sydney to the breathtaking landscapes of the Outback, we offer seamless travel experiences tailored to your journey. Enjoy comfort, safety, and reliability as you explore the wonders of Australia with us.</p>
+                    </div>
+
+                    <div class="slide">
+                        <img src="africa.jpeg" alt="AFRICA">
+                        <h2 class="h-secondary">AFRICA</h2>
+                        <p>Embark on an unforgettable journey across Africa with our airline's premier services. From bustling cities to remote landscapes, we offer seamless travel experiences tailored to your needs. Explore diverse cultures, breathtaking scenery, and iconic landmarks while enjoying unmatched comfort, safety, and reliability. Your African adventure awaits with us.</p>
+                    </div>
+                    
+                </div>
+                <div>
+                    <button onclick="gonext()" class="slidebutton">next</button>
+                </div>
+        </section>
+        <section id="fleet" class="section">
+            <div id="ftop">
+                <div id="fhead">
+                    <div id="fleetheading">
+                        <h1>Our Fleet</h1>
+                        <p>Private Aviation at Your Fingertips</p>
+                    </div>
+                    <div id="pimage">
+                        <img data-src="helicopter-.png" class="slides" alt="helicopter" id="image">
+                    </div>
+                </div>
+                <div id="ftext">
+                    <!-- <div class="jetDetails" style="display: none;" id="jet">
+                        <h3 class="ftexthh">smalljet</h3>
+                        <div>
+                            <p>This category emerged to accommodate transcontinental flight for larger groups of passengers ( 5 to 10 ) and therefore cabin height, width and comfort are improved on the categories we’ve looked at so far, boosting in-cabin productivity. </p>
+                            <p >Capacity: 5-10 passengers<br/>* Range: 2000-3000 miles<br/>* Speed: 430-450 mph</p>
+                        </div>
+                    </div>
+                    <div class="jetDetails"  style="display: none;" id="midjet">
+                        <h3 class="ftexthh">midsize</h3>
+                        <div>
+                            <p>Tremendously popular in terms of size, these jets offer a highly desirable large cabin feel but have lower operating costs than their heavier counterpartss: a blend which makes this category very special.</p>
+                            <p >Capacity: 3-6 passengers<br/>* Range: 350-500 miles<br/>* Speed: 100-150 mph</p>
+                        </div>
+                    </div>
+                    
+                    <a href="hp.html"></a>
+                </div> -->
+                </div>
+    
+            </div>
+            <div id="fnav">
+                <button onclick="changeImage(event)" class="imgbut" data-src="helicopter-.png" name="heli" >
+                    <div id="hellicopters" class="helicopter">
+                        <img src="helicopter-.png" alt="helicopter">
+                        <p>Helicopter</p>
+                    </div>
+                </button>
+               <button onclick="changeImage(event)" class="imgbut" data-src="sjet.png" name="sjet">
+                    <div id="SmallJet" class="helicopter">
+                        <img src="sjet.png" alt="Small jet">
+                        <p>Small Jet</p>
+                    </div>
+               </button>
+               <button onclick="changeImage(event)" class="imgbut" data-src="ljet.png" name="ljet">
+                     <div id="Large Jat" class="helicopter">
+                        <img src="ljet.png" alt="Large jet">
+                        <p>Large Jet</p>
+                    </div>
+               </button>
+                <button onclick="changeImage(event)" class="imgbut" data-src="luxjet.png" name="luxjet">
+                    <div id="Luxury Jet" class="helicopter">
+                        <img src="luxjet.png" alt="Luxury jet">
+                        <p>Luxury Jet</p>
+                    </div>
+                </button>
+                <button onclick="changeImage(event)" class="imgbut" data-src="a380.png" name="air">
+                    <div id="Airliner" class="helicopter">
+                        <img src="a380.png" alt="Airliner">
+                        <p>Airliner</p>
+                    </div>
+                </button>
+            </div>
+                
+            
+               
+    
+        </section>
+        <!-- <div class="container">
+            <div class="column">
+              <h2> First column </h2>
+              <p> This is first column of our grid system</p>
+            </div>
+            <div class="column">
+              <h2> second column </h2>
+              <p> This is second column of our grid system</p>
+            </div>
+            <div class="column">
+              <h2> Third column </h2>
+              <p> This is third column of our grid system</p>
+            </div>
+        </div> -->
+        <section class="News" class="section">
+            <div id="newheadline">
+                <h1>Our Products</h1>
+            </div>
+            <div id="newcontant">
+                <div id="Pilotservices" class="contsection">
+                    <img src="pioletser.jpeg" alt="Pilotservices">
+                    <div class="newcont">
+                        <h2>Pilot services</h2>
+                        <p class="newcontp">Experience excellence in pilot services with our airline. Our skilled pilots ensure safe and efficient flights, backed by rigorous training, extensive experience, and a commitment to professionalism. Trust us for a seamless travel experience every time.</p>
+                    </div>
+                </div>
+                <div id="Holidaypackage" class="contsection">
+                    <img src="holydayservse.jpeg" alt="Holidaypackage">
+                    <div class="newcont">
+                        <h2>Holiday package</h2>
+                        <p class="newcontp"> Explore our exclusive holiday packages! Enjoy seamless travel experiences with flights, accommodations, and activities bundled into one convenient package. Whether it's a beach getaway, city escape, or adventure trip, we've got you covered. Book now and make your dream vacation a reality!</p>
+                    </div>
+                </div>
+                <div id="Aviationconsulting" class="contsection">
+                    <img src="aviaioncons.jpeg" alt="Aviationconsultin">
+                    <div class="newcont">
+                        <h2>Aviation consulting</h2>
+                        <p class="newcontp">Elevate your airline's success with expert aviation consulting services. From strategic planning to regulatory compliance, our team offers tailored guidance to optimize operations, enhance safety, and drive growth. Partner with us for unparalleled industry expertise and results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="last" class="section">
+            <div id="part1">
+                <img src="ls.png" alt="trust">
+                <p class="lasttext">We are the most trusted one</p>
+                <h2> since 1973</h2>
+            </div>
+            <div id="part2">
+                <a href="nitkkr.ac" target="_blank">home</a>
+                <a href="nitkkr.ac" target="_blank">services</a>
+                <a href="nitkkr.ac" target="_blank">Fleet</a>
+                <a href="nitkkr.ac" target="_blank">Airports</a>
+            </div>    
+            <div id="part3">
+                <a href="nitkkr.ac" target="_blank">career</a>
+                <a href="nitkkr.ac" target="_blank">Privacy Policy</a>
+                <a href="nitkkr.ac" target="_blank">Term & Condition</a>
+                <a href="nitkkr.ac" target="_blank">News & Media</a>
+            </div>
+            <div id="part4">
+                <div class="up">
+                    <p>catch us on</p>
+                    <div id="llogo">
+                        <img src="linkedind.svg" alt="facebook">
+                        <img src="x-twitter.svg" alt="facebook">
+                        <img src="instagram.svg" alt="facebook">
+                        <img src="facebook.svg" alt="facebook">
+                    </div>
+                </div>
+                <div id="lastmail">
+                    <input type="text" placeholder="Enter your email">
+                    <a href="dev12011175@nitkkr.ac.in.com">Stay connected</a>
+                </div>
+            </div>
+        </section>
+        <section id="copyr" class="section">
+            <hr class="line">
+            <p>© 1973-2024 All right reserved by Fly High Private Limited.</p>
+        </section>
+    </section>
+    <script src="./scri.js"></script>
+    <script src="./scrip.js"></script>
+</body>
+</html>
