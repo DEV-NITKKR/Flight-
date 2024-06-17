@@ -26,6 +26,5 @@ const slideImage = () => {
         }
     )
 }
-// window.onload=setInterval(function() {
-//     slideImage( gonext() )
-// },3000);
+ window.onload=setInterval(function() {     slideImage( gonext() )
+ },3000);
